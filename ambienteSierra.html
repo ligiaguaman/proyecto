@@ -1,0 +1,56 @@
+<html lang="es">
+      <head>
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+          <title>Región Sierra o Interandina</title>
+          <link rel="stylesheet" href="css/bootstrap.min.css">
+          <link rel="stylesheet" href="css/style.css">
+          <script type="text/javascript" src="libsjs/three.js"></script>
+          <script type="text/javascript" src="libsjs/dat.gui.js"></script>
+          <script type="text/javascript" src="libsjs/jquery-1.11.2.min.js"></script>
+          <script type="text/javascript" src="libsjs/bootstrap.min.js"></script>
+          <script type="text/javascript" src="libsjs/OrbitControls.js"></script>
+          <script type="text/javascript" src="libsjs/THREEx.FullScreen.js"></script>
+          <script type="text/javascript" src="libsjs/THREEx.KeyboardState.js"></script>
+          <script type="text/javascript" src="libsjs/THREEx.WindowResize.js"></script>
+          <script type="text/javascript" src="libsjs/TrackballControls.js"></script>
+          <script type="text/javascript" src="libsjs/threex.domevents.js"></script>
+          <script type="text/javascript" src="libsjs/Projector.js"></script>
+          <script src="fuentes/helvetiker_regular.typeface.js"></script>
+          
+          <style>
+              body{
+                  background-color: beige;
+                  background-size: cover;
+                  overflow: hidden;
+              }
+          </style>   
+      </head>
+      
+       <body onload="WebGLEmpezar();">    
+        
+        
+        <!--contenedor de la pantalla-->
+        <div class="container-fluid">      
+            
+           <!--div para botones de inicio y demas regiones-->
+            <div class="btn-toolbar" role="toolbar" style="width:60%; height:5%; float:left; margin-right:20%; margin-top:0.5%">
+                <div class="btn-group">
+                   <button type="button" class="btn btn-primary btn-lg" style="margin-right:10px" onclick="window.location.href='index.html'">Inicio</button>
+                   <button type="button" class="btn btn-primary btn-lg" style="margin-right:10px" onclick="window.location.href='ambienteCosta.html'">Región Costa o Litoral </button>
+                   <button type="button" class="btn btn-primary btn-lg" style="margin-right:10px" onclick="window.location.href='ambienteOriente.html'">Región Oriental o Amazonía</button>
+                   <button type="button" class="btn btn-primary btn-lg" onclick="window.location.href='ambienteInsular.html'">Región Insular o Islas Galápagos</button> 
+                </div>
+            </div>
+            
+            <!--div que contiene el canvas para el ambiente región sierra-->
+            <div style="width:100%; height:100%; float:center">
+             
+             <!--canvas del ambiente región sierra-->
+                <canvas id="ambienteSierra" align="center"></canvas>
+                 <script type="text/javascript" src="js/ambienteSierra.js"></script>
+            </div>
+            
+         </div>
+       </body>
+</html>

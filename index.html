@@ -1,0 +1,62 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>Regiones Naturales del Ecuador</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script type="text/javascript" src="libsjs/three.js"></script>
+	    <script type="text/javascript" src="libsjs/dat.gui.js"></script>
+	    <script type="text/javascript" src="libsjs/OrbitControls.js"></script>
+	    <script type="text/javascript" src="libsjs/jquery-1.11.2.min.js"></script>
+        <script type="text/javascript" src="libsjs/bootstrap.min.js"></script>
+        
+<!--        <bgsound src="../audios/ecuador.wav" balance=0 volume=0></bgsound>-->
+        <embed src="audios/ecuador.wav" hidden="true" type="audio/wav"  autostart="true">
+        
+        <style>
+            body{
+                background-image: url(imagenes/fondos.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                overflow: hidden;
+            }
+        </style>
+    </head>
+    <body>
+          
+          
+          
+          <!--div contenedor de todos los elementos en pantalla-->
+          <div class="container-fluid" style="width:100%; height:100%">
+           
+            <!--div para la información del pictograma-->
+            <div class="titulo" style="width:80%; height:15%; float:center; margin-left:10%; margin-right:10%; margin-top:8%"><b>Mi patria el ECUADOR tiene 3 regiones naturales que son: COSTA, SIERRA, ORIENTE Y GALÁPAGOS. Los climas de las regiones son: CÁLIDO, HÚMEDO Y TROPICAL.</b>
+            </div>
+           
+            <!--div que contiene el canvas para el mapa y los botones de acción para enlace a las pantallas de los ambientes y actividades-->
+            <div style="width:90%; height:60%; float:left; margin-left:5%; margin-right:3%; margin-top:1%">
+             
+             <!--canvas del mapa-->
+             <canvas id="mapa" width="1500px" height="750px" class="mapa"></canvas>
+             <script type="text/javascript" src="js/script.js"></script>
+             
+                <!--div de los botones de acción para enlace a los ambientes-->
+                <div class="regiones" style="width:10%; height:10%; float:left; margin-left:3%; margin-top:5%">
+                     <button class="boton" id="btnCosta"  onclick="window.location.href='ambienteCosta.html'">Región Costa o Litoral</button> <br><br>
+                     <button class="boton" id="btnSierra" onclick="window.location.href='ambienteSierra.html'">Región Sierra o Interandina</button> <br><br>
+                     <button class="boton" id="btnOriente" onclick="window.location.href='ambienteOriente.html'">Región Oriental o Amazonía</button> <br><br>
+                     <button class="boton" id="btnInsular" onclick="window.location.href='ambienteInsular.html'">Región Insular o Islas Galápagos</button> 
+                </div>
+                
+                    <!--div de los botones de acción para enlace a las actividades
+                    <div class="actividades" style="width:10%; height:10%; float:left; margin-left:3%; margin-top:6%">
+                     <button class="boton" id="btnVestimenta"  onclick="window.location.href='actividadVestimenta.html'" >Actividad: Vestimenta</button> <br><br>
+                     <button class="boton" id="btnProductos"  onclick="window.location.href='actividadProductos.html'" >Actividad: Productos y platos típicos</button> <br><br>
+                     <button class="boton" id="btnFauna" onclick="window.location.href='actividadFauna.html'" >Actividad: Fauna</button>
+                    </div>-->
+            </div>
+         </div>
+        
+    </body>
+</html>
