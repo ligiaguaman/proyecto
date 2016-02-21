@@ -1,0 +1,85 @@
+label{
+font-family:inherit;
+font-size: 300px ;
+color:white;
+margin-top:3%;
+margin-left:250px;
+}
+
+
+.canvas_css{
+	background-color:white;
+    margin-top: 0px;
+    border-radius: 30px;
+    box-shadow: 0 0 40px 10px #1d1504;
+    
+	}
+
+.div_left{
+	width:5px;
+	float: left;
+}
+
+.div_right{
+	padding: 10px;
+	float: left;
+}
+
+titulo{
+  font-family:sans-serif;
+  font-size: 35px;
+  font-weight: 600;          
+  color:darkblue;
+  text-align: center;
+  position:relative;    
+}
+
+b{
+    font-family: inherit;
+    font-size: 26px;
+    color:dimgray;
+    text-align:justify;
+    position: relative;
+}
+
+c{
+    font-family:inherit;
+    font-size: 30px;
+    font-weight: 300;
+    color: dimgray;
+    text-align:center;
+    position:sticky;
+}
+
+.boton{
+    font-family: sans-serif;
+     font-size: 28px;
+     font-weight:lighter;
+     color: white;
+     background-color: deepskyblue;
+     border-color: deepskyblue;
+     border-style:outset;
+     border-bottom-right-radius:20px;
+     border-top-left-radius:20px;
+     border-bottom-width: medium;
+    bottom:inherit;
+}
+
+
+
+#mapa {
+    width: 1500px;
+    height: 750px;
+    align-content:center;
+    float: left;
+        
+}
+
+t#ambienteCosta {
+    align-content: stretch;
+    float: left;
+}
+
+.btn {
+    font-size: 18px;
+}
